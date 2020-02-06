@@ -1,0 +1,10 @@
+{
+  "domain": "china_holiday",
+  "name": "china holiday",
+  "documentation": "https://github.com/icoderspace/myhomeassistant",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@linghao"
+  ]
+}

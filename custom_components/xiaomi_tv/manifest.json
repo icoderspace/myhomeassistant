@@ -1,0 +1,10 @@
+{
+  "domain": "xiaomi_tv",
+  "name": "xiaomi tv",
+  "documentation": "https://github.com/icoderspace/myhomeassistant",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@linghao"
+  ]
+}

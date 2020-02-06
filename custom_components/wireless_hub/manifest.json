@@ -1,0 +1,10 @@
+{
+  "domain": "wireless_hub",
+  "name": "wireless hub",
+  "documentation": "https://github.com/icoderspace/myhomeassistant",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@icoderspace"
+  ]
+}
