@@ -1,0 +1,10 @@
+{
+  "domain": "xiaomi_relay",
+  "name": "小米墙壁开关扩展",
+  "documentation": "https://github.com/icoderspace/myhomeassistant",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@linghao"
+  ]
+}
