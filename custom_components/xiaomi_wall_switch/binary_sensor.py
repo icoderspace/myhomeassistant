@@ -84,7 +84,7 @@ class XiaomiExtendButton(XiaomiBinarySensor):
         """Parse data sent by gateway."""
 
         value = data.get(self._data_key)
-        _LOGGER.info("parse_data :%s,raw_data:%s", value, raw_data)
+        _LOGGER.debug("parse_data :%s,raw_data:%s", value, raw_data)
         if value is None:
             return False
         if value == "click":
@@ -105,13 +105,13 @@ class XiaomiExtendButton(XiaomiBinarySensor):
 
     def _check_click_type(self, click_type):
         # 延时一秒，如果一秒内没有新的动作，则认为是单击，否则就是双击
-        time.sleep(1)
+        time.sleep(0.7)
         if self._clicking:
             self._clicking = False
             self._fire_event(click_type)
 
     def _fire_event(self, click_type):
-        _LOGGER.info("_fire_event click_type:%s", click_type)
+        _LOGGER.debug("_fire_event click_type:%s", click_type)
         self._hass.bus.fire(
             "xiaomi_aqara.click",
             {"entity_id": self.entity_id, "click_type": click_type},
